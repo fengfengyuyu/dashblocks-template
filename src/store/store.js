@@ -8,6 +8,14 @@ export default new Vuex.Store({
   modules: {
     layout
   },
-  mutations: {},
-  actions: {}
+  mutations: {
+    SET_DB_SPEC(state, { spec }) {
+      state.dashboardSpec = spec;
+    }
+  },
+  actions: {
+    setDashboardSpec({ commit }, { spec }) {
+      commit('SET_DB_SPEC', { spec: spec });
+    }
+  }
 });

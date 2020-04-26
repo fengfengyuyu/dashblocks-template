@@ -7,6 +7,7 @@ import DashblocksShowcase from './views/DashblocksShowcase.vue';
 import Typography from './views/typography.vue';
 import MaterialIcons from './views/materialicons.vue';
 import ChartJsShowcase from './views/ChartJsShowcase.vue';
+import New from './views/new.vue';
 import Dygraphs from './views/Dygraphs.vue';
 import Mdi from './views/mdi.vue';
 
@@ -29,6 +30,11 @@ export default new Router({
           path: '/chartjs',
           name: 'chartjs',
           component: ChartJsShowcase
+        },
+        {
+          path: '/new',
+          name: 'new',
+          component: New
         },
         {
           path: '/dygraphs',
